@@ -65,7 +65,7 @@ return $data;
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Contact Me</title>
     <link href="BootStrap/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
@@ -77,65 +77,69 @@ return $data;
 </nav>
 
 <body>
-<?php /**
-$name_error = "";
-$email_error = "";
-$name = "";
-$email = "";
-$message = "";
-$recipient = "asplund.alex@gmail.com";
+<?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    $from = 'azuzuvsfry@hotmail.com';
+    $sendTo = 'asplund.alex@gmail.com';
+    $subject = 'New contact form message';
+    $fields = array('name' => 'Name', 'last_name' => 'Last Name', 'email' => 'Email', 'message' => 'Message');
+    $okMessage = 'Submission successful!';
+    $errorMessage = 'Submission failed.';
 
-    if (empty($_POST["name"])){
-        $name_error = "Name is required";
-    } else {
-        $name = test_input($_POST["name"]);
-        if (!preg_match("/^[a-zA-Z]*$/", $name)){
-            $name_error = "Only letters and white space allowed";
-        }
-    }
+    
 
-    if (empty($_POST["email"])){
-        $name_error = "Email is required";
-    } else {
-        $email = test_input($_POST["email"]);
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-            $email_error = "Invalid email format";
-        }
-    }
+?>
 
-    if (empty($_POST["message"])){
-        $message = "";
-    } else {
-        $message = test_input($_POST["message"]);
-    }
+<form id="contact_form" method="post" action="contact.php" role="form">
 
-}
+    <div class="messages"></div>
 
+    <div class="controls">
 
-function test_input($data){
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input id="form_name" type="text" name="name" class="form_control" placeholder="Please enter your first name" required="required" data-error="First name is required">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input id="form_last_name" type="text" name="last_name" class="form-control" placeholder="Please enter your last name" required="required" data-error="Last name is required">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter valid email" required="required" data-error="Invalid email">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Please enter your message here." rows="4" required="required" data-error="Please enter a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send Message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">
+                    <strong>*</strong> These fields are required.
+                </p>
+            </div>
+        </div>
 
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
+    </div>
 
-}
-*/?>
-<div>
-
-    <p><span class="error">* Required Field</span></p>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-
-        <p>Name</p> <input type="text" name="name" value="<?php echo $name; ?>"><p><span class="error">* <?php echo $name_error; ?></span></p><br />
-        <p>Email</p> <input type="text" name="email" value="<?php echo $email; ?>"><p><span class="error">* <?php echo $email_error; ?></span></p><br />
-        <p>Message</p> <textarea name="message" rows="10" cols="15"><?php echo $message; ?></textarea><br />
-        <input type="submit" value="send"><input type="reset" value="clear">
-
-    </form>
-
-</div>
+</form>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="BootStrap/js/bootstrap.min.js"></script>
