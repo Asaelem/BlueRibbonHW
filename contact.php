@@ -63,25 +63,18 @@ return $data;
 <head>
 
     <meta charset="utf-8">
-    <title>Contact</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="BootStrap/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
-<header>
+<nav>
 
-    <div id="nav_bar">
 
-        <ul>
 
-            <li><a href="home_page.php">Home</a></li>
-            <li><a></a></li>
-            <li><a href="contact.php">Contact</a></li>
-
-        </ul>
-
-    </div>
-
-</header>
+</nav>
 
 <body>
 <?php /**
@@ -143,6 +136,9 @@ function test_input($data){
     </form>
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="BootStrap/js/bootstrap.min.js"></script>
 
 </body>
 
