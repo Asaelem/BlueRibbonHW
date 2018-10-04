@@ -66,7 +66,8 @@ return $data;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Me</title>
-    <link href="BootStrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="BootStrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="CSS/custom.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -86,7 +87,7 @@ return $data;
     $okMessage = 'Submission successful!';
     $errorMessage = 'Submission failed.';
 
-    
+
 
 ?>
 
@@ -99,13 +100,15 @@ return $data;
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
+                    <label for="form_name">First Name *</label>
                     <input id="form_name" type="text" name="name" class="form_control" placeholder="Please enter your first name" required="required" data-error="First name is required">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <input id="form_last_name" type="text" name="last_name" class="form-control" placeholder="Please enter your last name" required="required" data-error="Last name is required">
+                    <label for="form_lastname">Last Name *</label>
+                    <input id="form_lastname" type="text" name="last_name" class="form-control" placeholder="Please enter your last name" required="required" data-error="Last name is required">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
@@ -113,6 +116,7 @@ return $data;
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
+                    <label for="form_email">Email *</label>
                     <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter valid email" required="required" data-error="Invalid email">
                     <div class="help-block with-errors"></div>
                 </div>
@@ -121,6 +125,7 @@ return $data;
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
+                    <label for="form_message">Enter your message here *</label>
                     <textarea id="form_message" name="message" class="form-control" placeholder="Please enter your message here." rows="4" required="required" data-error="Please enter a message."></textarea>
                     <div class="help-block with-errors"></div>
                 </div>
@@ -141,7 +146,7 @@ return $data;
 
 </form>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="BootStrap/js/bootstrap.min.js"></script>
 
 </body>
