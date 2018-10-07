@@ -11,3 +11,11 @@ textarea#form_message{
     border: none;
     border-bottom: 2px solid black;
 }
+
+footer{
+    background-color: #1d2124;
+}
+
+footer p{
+    color: white;
+}
