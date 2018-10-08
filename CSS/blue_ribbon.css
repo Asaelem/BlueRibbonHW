@@ -7,7 +7,9 @@
     position: relative;
 
 }
+body{
 
+}
 
 #myCarousel{
 
@@ -17,8 +19,24 @@
     margin-right: auto;
 }
 
-#carousel-images div{
 
-   max-height: 500px;
+/*This normalizes image sizes, but breaks responsiveness */
 
+
+/*#carousel-images div{*/
+
+    /*height: 400px;*/
+
+/*}*/
+/*#carousel-images div img{*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*min-width: 100%;*/
+    /*height: 100%;*/
+
+/*}*/
+#main-content div{
+    margin: 7em;
+    background-color: white;
 }
