@@ -13,9 +13,12 @@ textarea#form_message{
 }
 
 footer{
-    background-color: #1d2124;
+    height: 100px;
+    background-color: #ced4da;
 }
 
-footer p{
-    color: white;
+#footer_contact{
+    margin: auto;
+    width: 50%;
+    text-align: center;
 }
