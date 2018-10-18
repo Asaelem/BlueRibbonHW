@@ -1,12 +1,25 @@
 #navbar-nonBS{
     text-align: center;
-    margin-bottom: .75em;
+
+
 }
 
 #navbar-nonBS ul{
     position: relative;
-
 }
+#navbar-nonBS ul li{
+    font-family: 'Special Elite', Serif;
+    font-size: 1.4em ;
+    margin-left: .75em;
+    margin-right: .75em;
+}
+.navbar-text{
+    color: #533f03;
+}
+#nav-box{
+    background-color: white;
+}
+
 body{
 
 }
