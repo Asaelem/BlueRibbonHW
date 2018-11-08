@@ -1,6 +1,11 @@
+#fixed-nav{
+    font-family: 'Special Elite', Serif;
+}
+
 #navbar-nonBS{
     text-align: center;
     margin-top: 3em;
+    margin-bottom: 1em;
 
 
 }
@@ -34,7 +39,7 @@ body{
 }
 
 
-/*This normalizes image sizes, but breaks responsiveness */
+
 
 
 #carousel-images {
