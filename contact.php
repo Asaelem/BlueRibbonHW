@@ -13,15 +13,46 @@
 <html>
 
 <head>
-
+    <title>Home page</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Me</title>
-    <link href="BootStrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="CSS/custom.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="CSS/blue_ribbon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS/carousel.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 </head>
+
+<header>
+    <!--Adding the fixed navbar to top of page-->
+    <nav class="navbar navbar-expand-lg d-none d-lg-block sticky-top  navbar-light bg-light" id="fixed-nav">
+        <a class="navbar-brand" href="#">Blue Ribbon HW</a>
+    </nav>
+    <!--End fixed navbar-->
+    <div class="container" id="nav-box">
+        <nav class="navbar navbar-expand-lg justify-content-center navbar-expand-sm " id="navbar-nonBS">
+            <ul  class="navbar-nav" id="nav-ul">
+                <li class="nav-item"><a class="nav-link"  href="Home.html">Home</a> </li>
+                <li class="nav-item "><a class="nav-link " href="rental.html">Rental</a> </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Commission</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Chairs</a>
+                        <a class="dropdown-item" href="#">Donation Pieces</a>
+                        <a class="dropdown-item" href="#">Flags</a>
+                        <a class="dropdown-item" href="#">Pets</a>
+
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a> </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 <nav>
 
