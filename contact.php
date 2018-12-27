@@ -37,7 +37,7 @@
     <div class="container" id="nav-box">
         <nav class="navbar navbar-expand-lg justify-content-center navbar-expand-sm " id="navbar-nonBS">
             <ul  class="navbar-nav" id="nav-ul">
-                <li class="nav-item"><a class="nav-link"  href="Home.html">Home</a> </li>
+                <li class="nav-item"><a class="nav-link"  href="index.html">Home</a> </li>
                 <li class="nav-item "><a class="nav-link " href="rental.html">Rental</a> </li>
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Commission</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
