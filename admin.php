@@ -39,14 +39,16 @@ include('login.php');
         <form id="login" method="post" action="">
 
             <div class="form-group">
-                <input type="text" class="form-control" id="username_input" placeholder="Username">
+                <input type="text" class="form-control" id="username_input" name="username_input" placeholder="Username">
             </div>
 
             <div class="form-group">
-                <input type="password" class="form-control" id="password_input" placeholder="Password">
+                <input type="password" class="form-control" id="password_input" name="password_input" placeholder="Password">
             </div>
 
             <button type="submit" class="btn btn-primary">Login</button>
+
+            <span><?php echo $error; ?></span>
 
         </form>
 
