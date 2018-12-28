@@ -34,7 +34,7 @@ if ($message === ''){
 }
 
 $form_content="From: $first_name $last_name \n Message: $message";
-$recipient = "asplund.alex@gmail.com";
+$recipient = "asplund.alex@gmail.com, dylans07@yahoo.com";
 $subject = "Contact Form";
 $mail_header = "From: $email \r\n";
 mail($recipient, $subject, $form_content, $mail_header) or die("Error!");
