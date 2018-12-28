@@ -2,6 +2,12 @@
     font-family: 'Special Elite', Serif;
 }
 
+
+#logo{
+    height: 10em;
+    width: 10em;
+
+}
 #navbar-nonBS{
     text-align: center;
     margin-top: 3em;
@@ -25,6 +31,7 @@
 }
 #nav-box{
     background-color: white;
+
 }
 
 #social_icon_header{
@@ -34,10 +41,19 @@
 body{
 
 }
+/*#main-content{*/
+    /*position: center;*/
+    /*margin-left: 12em;*/
+/*}*/
+#main-content div{
+    margin: 7em;
+    background-color: white;
+
+}
 
 #myCarousel{
 
-    width: 50%;
+    width: 60%;
     position: center;
     margin-left: auto;
     margin-right: auto;
@@ -68,7 +84,3 @@ body{
 
 }
 
-#main-content div{
-    margin: 7em;
-    background-color: white;
-}
