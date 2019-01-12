@@ -61,11 +61,12 @@ $mail -> Username = 'asplund.alex@gmail.com';
 $mail -> Password = 'zombizzle';
 $mail -> Port = 587;
 
-
-if (!$mail->send())
-{
-    /* PHPMailer error. */
-    echo $mail->ErrorInfo;
+try{
+    $mail->Send();
+    echo "Success!";
+} catch(Exception $e){
+    //Something went bad
+    echo "Fail - " . $mail->ErrorInfo;
 }
 
 //$first_name = $_POST['first_name'];
