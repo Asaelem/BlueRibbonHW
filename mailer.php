@@ -32,10 +32,9 @@ if ($message === ''){
     echo "Message cannot be empty.";
     die();
 }
-
-$form_content="From: $first_name $last_name \n Message: $message";
 $recipient = "asplund.alex@gmail.com, dylans07@yahoo.com";
 $subject = "Contact Form";
+$form_content="From: $first_name $last_name \n Message: $message";
 $mail_header = "From: $email \r\n";
 mail($recipient, $subject, $form_content, $mail_header) or die("Error!");
 echo "Thank You!";
