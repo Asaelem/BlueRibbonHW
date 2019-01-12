@@ -56,10 +56,10 @@ $mail -> isSMTP();
 
 $mail -> Host = 'smtp.gmail.com';
 $mail -> SMTPAuth = true;
-$mail -> SMTPSecure = 'ssl';
+$mail -> SMTPSecure = 'tls';
 $mail -> Username = 'asplund.alex@gmail.com';
 $mail -> Password = 'zombizzle';
-$mail -> Port = 465;
+$mail -> Port = 587;
 
 
 if (!$mail->send())
