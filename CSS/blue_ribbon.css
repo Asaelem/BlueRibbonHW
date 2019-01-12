@@ -60,6 +60,9 @@ body{
 
 }
 
+#about_text{
+    font-size: 1.5em;}
+
 #myCarousel{
 
     width: 60%;
@@ -89,6 +92,8 @@ body{
     background-color: black;
     opacity: .75;
 }
+
+
 
 footer{
     background-color: #337A96;
