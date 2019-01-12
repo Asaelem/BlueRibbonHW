@@ -14,13 +14,14 @@ textarea#form_message{
 
 footer{
     height: 100px;
-    background-color: #ced4da;
+    background-color: #337A96;
 }
 
 #footer_contact{
     margin: auto;
     width: 50%;
     text-align: center;
+    color: #edeff2;
 }
 
 .btn:focus, .btn:active, button:focus, button:active{
