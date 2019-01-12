@@ -1,5 +1,10 @@
 #fixed-nav{
     font-family: 'Special Elite', Serif;
+    background-color: #337A96;
+
+}
+.navbar-brand{
+    color:#edeff2;
 }
 
 
@@ -12,7 +17,7 @@
     text-align: center;
     margin-top: 3em;
     margin-bottom: 1em;
-
+    background-color: #edeff2;
 
 }
 
@@ -29,8 +34,12 @@
 .navbar-text{
     color: #533f03;
 }
+
+.nav-link{
+    color: #337A96;
+}
 #nav-box{
-    background-color: white;
+    background-color: #edeff2;
 
 }
 
@@ -39,7 +48,7 @@
 }
 
 body{
-
+    background-color: #edeff2;
 }
 /*#main-content{*/
     /*position: center;*/
@@ -47,7 +56,7 @@ body{
 /*}*/
 #main-content div{
     margin: 7em;
-    background-color: white;
+    background-color: #edeff2;
 
 }
 
@@ -79,8 +88,9 @@ body{
 .carousel-decoration{
     background-color: black;
     opacity: .75;
+}
 
-
-
+footer{
+    background-color: #337A96;
 }
 
