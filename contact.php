@@ -62,7 +62,7 @@
 
 <body>
 
-<form id="contact_form" method="post" action="contact.php" role="form">
+<form id="contact_form" method="post" action="mailer.php" role="form">
 
     <div class="messages"></div>
 
