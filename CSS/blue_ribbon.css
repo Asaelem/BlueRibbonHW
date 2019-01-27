@@ -47,6 +47,11 @@
     float: right;
 }
 
+#rental_header{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 body{
     background-color: #edeff2;
 }
