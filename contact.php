@@ -63,8 +63,8 @@ if(isset($_POST['submit-button'])){
     $mail -> Host = 'smtp.gmail.com';
     $mail -> SMTPAuth = true;
     $mail -> SMTPSecure = 'tls';
-    $mail -> Username = 'asplund.alex@gmail.com';
-    $mail -> Password = 'zombizzle';
+    $mail -> Username = 'nmmmailer@gmail.com';
+    $mail -> Password = 'Zeppelin1';
     $mail -> Port = 587;
 
     try{
