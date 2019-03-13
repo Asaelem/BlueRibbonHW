@@ -51,7 +51,7 @@ if(isset($_POST['submit-button'])){
 
     $mail -> setFrom($email, $first_name + $last_name);
 
-    $mail -> addAddress('azuzuvsfry@hotmail.com');
+    $mail -> addAddress('blueribbonhardwoods@gmail.com');
 
     $mail -> Subject = 'Blue Ribbon contact';
 
